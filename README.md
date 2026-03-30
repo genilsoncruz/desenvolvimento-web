@@ -1,2 +1,2 @@
-git config user.name genilsoncruz
-git config user.email genilsoncruz@gmail.com
+1) Abrir Terminal
+2) Rodar init.bat

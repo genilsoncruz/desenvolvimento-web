@@ -1,0 +1,92 @@
+/* Estilos inspirados na aparência do Netflix */
+/* Definições base explícitas para consistência e responsividade */
+
+html { /* Define a fonte raiz explicitamente */
+    font-size: 16px; /* Tamanho da fonte raiz - base para unidades rem */
+}
+
+* { /* Reset básico para box-sizing */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+}
+
+body { /* Estilos para o corpo da página */
+    background-color: #000000; /* Cor de fundo preta */
+    color: #ffffff; /* Cor do texto branca */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Família de fontes */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimentos */
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Altura mínima da viewport - útil para telas grandes */
+}
+
+main { /* Estilos para o elemento main */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Direção coluna */
+    align-items: center; /* Alinha ao centro */
+    padding: 1.25rem; /* Preenchimento interno - 20px em rem */
+    max-width: 75rem; /* Largura máxima - 1200px em rem */
+    width: 100%; /* Largura total */
+}
+
+header { /* Estilos para o cabeçalho */
+    text-align: center; /* Alinha texto ao centro */
+    margin-bottom: 2.5rem; /* Margem inferior - 40px em rem */
+}
+
+h1 { /* Estilos para o título h1 */
+    font-size: 3rem; /* Tamanho da fonte - 48px em rem */
+    font-weight: 400; /* Peso da fonte */
+    margin: 0; /* Remove margens */
+}
+
+.container { /* Estilos para a classe container */
+    display: flex; /* Flexbox */
+    flex-wrap: wrap; /* Permite quebra */
+    justify-content: center; /* Justifica ao centro */
+    gap: 2.5rem; /* Espaçamento entre itens - 40px em rem */
+}
+
+.profile { /* Estilos para a classe profile */
+    display: flex; /* Flex */
+    flex-direction: column; /* Coluna */
+    align-items: center; /* Alinha ao centro */
+    cursor: pointer; /* Cursor ponteiro */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.profile:hover { /* Hover no profile */
+    transform: scale(1.1); /* Escala */
+}
+
+figure { /* Estilos para figure */
+    margin: 0; /* Remove margens */
+    text-align: center; /* Alinha texto ao centro */
+}
+
+img { /* Estilos para img */
+    width: 9.375rem; /* Largura - 150px em rem */
+    height: 9.375rem; /* Altura - 150px em rem */
+    border-radius: 50%; /* Bordas arredondadas */
+    object-fit: cover; /* Ajusta imagem */
+    border: 0.1875rem solid transparent; /* Borda transparente - 3px em rem */
+    transition: border-color 0.3s ease; /* Transição da borda */
+}
+
+.profile:hover img { /* Hover na img */
+    border-color: #ffffff; /* Borda branca */
+}
+
+figcaption { /* Estilos para figcaption */
+    margin-top: 0.625rem; /* Margem superior - 10px em rem */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: 300; /* Peso da fonte */
+}
+
+/* Responsividade - Breakpoint em 768px para tablets e menores */
+@media (max-width: 768px) { /* Media query para telas menores */
+    h1 { font-size: 2rem; } /* Reduz fonte do h1 - 32px em rem */
+    .container { gap: 1.25rem; } /* Reduz gap - 20px em rem */
+    img { width: 7.5rem; height: 7.5rem; } /* Reduz imagens - 120px em rem */
+}

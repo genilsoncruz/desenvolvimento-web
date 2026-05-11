@@ -2,7 +2,7 @@
 document.getElementById("loginForm")?.addEventListener("submit", async e => {
   e.preventDefault();
 
-  const response = await fetch("../server-side/login.php", {
+  const response = await fetch("server-side/login.php", {
     method: "POST",
     body: new FormData(e.target)
   });
@@ -15,7 +15,7 @@ document.getElementById("loginForm")?.addEventListener("submit", async e => {
 document.getElementById("registerForm")?.addEventListener("submit", async e => {
   e.preventDefault();
 
-  const response = await fetch("../server-side/register.php", {
+  const response = await fetch("server-side/register.php", {
     method: "POST",
     body: new FormData(e.target)
   });

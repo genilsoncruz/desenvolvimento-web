@@ -1,0 +1,17 @@
+<?php
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+$users = file("users.txt");
+
+foreach ($users as $user) {
+    list($u_email, $u_pass) = explode(";", trim($user));
+
+    if ($email == $u_email && $password == $u_pass) {
+        echo "Login válido (servidor)";
+        exit;
+    }
+}
+
+echo "Login inválido (servidor)";
+?>

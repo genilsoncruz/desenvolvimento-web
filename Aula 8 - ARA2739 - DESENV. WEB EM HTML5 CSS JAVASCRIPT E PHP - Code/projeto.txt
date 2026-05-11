@@ -1,0 +1,11 @@
+/raiz
+│
+├── index.html          (capa)
+├── login.html
+├── registro.html
+│
+├── /styles
+│   └── style.css
+│
+└── /scripts
+    └── app-local.js    (versão 1 - localStorage)

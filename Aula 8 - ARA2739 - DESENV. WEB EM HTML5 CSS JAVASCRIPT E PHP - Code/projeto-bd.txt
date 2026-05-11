@@ -1,0 +1,30 @@
+Versão 1
+
+/raiz
+│
+├── index.html          (capa)
+├── login.html          (alterado para apontar para o app-server.js)
+├── registro.html       (alterado para apontar para o app-server.js)
+│
+├── /styles
+│   └── style.css
+│
+├── /scripts
+│   └── app-local.js    (versão 1 - localStorage)
+│
+└── /server-side
+    ├── register.php
+    └── login.php
+
+Versão 2 (novos arquivos)
+/raiz	
+├── /scripts
+│   └── app-server.js   (versão 2 - PHP)
+│
+└── /server-side
+    ├── config.php        (credenciais separadas)
+    ├── db.php            (conexão)
+    ├── register.php      (arquivo texto)
+    ├── login.php         (arquivo texto)
+	├── register-db.php   (banco de dados)
+    └── login-db.php      (banco de dados)
